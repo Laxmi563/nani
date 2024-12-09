@@ -40,7 +40,7 @@ def open_calendar():
             day_button = tk.Button(days_frame, text=day, width=3, command=lambda d=day: update_date(d, month, year))
             day_button.grid(row=row, column=col)
             col += 1
-            if col > 6:
+            if col < 6:
                 col = 0
                 row += 1
 
